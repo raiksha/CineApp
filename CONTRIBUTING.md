@@ -20,7 +20,7 @@
 
 1. Clona el repositorio y asegúrate de estar actualizado:
    ```bash
-   git clone https://github.com/MiskTake/Refugio-Animales.git
+   git clone https://github.com/PabloDesk/CineApp
    git checkout main
    git pull origin main
    ```
@@ -220,5 +220,3 @@ git merge upstream/dev
 ```
 
 Ejecuta esto estando en tu rama `dev` local. Trae los cambios del `dev` original y los fusiona con el tuyo.
-
----
