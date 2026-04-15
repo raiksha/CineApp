@@ -9,10 +9,6 @@ import java.util.Scanner;
 
 public class CineService {
 
-    private static Scanner scanner = new Scanner(System.in);
-
-public class CineService {
-
     private List<Cliente> listaClientes;
     private List<Funcion> listaFunciones;
 
@@ -38,56 +34,6 @@ public class CineService {
     public void setListaFunciones(List<Funcion> listaFunciones) {
         this.listaFunciones = listaFunciones;
     }
-
-    //do-while
-    int opcion;
-    boolean activo = true;
-
-    llenarDatos();
-
-        do
-
-    {
-        mostrarMenuService();
-        opcion = scanner.nextInt();
-        scanner.nextLine();
-
-        switch (opcion) {
-
-
-            case 1 -> {
-                crearCliente();
-            }
-
-            case 2 -> {
-                verCartelera();
-            }
-
-            case 3 -> {
-                comprarEntrada();
-            }
-
-            case 4 -> {
-                verEntradasCliente();
-            }
-
-            case 0 -> {
-                salir();
-            }
-
-            default -> System.out.println("⚠ Opción inválida");
-        }
-
-        if (activo) {
-            System.out.println("Presiona ENTER para continuar...");
-            scanner.nextLine();
-            scanner.nextLine();
-        }
-
-    } while(opcion !=0);
-
-        scanner.close();
-}
 
     // Métodos del servicio
     public void mostrarMenuService() {
